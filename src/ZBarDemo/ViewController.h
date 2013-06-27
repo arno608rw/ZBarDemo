@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZBarSDK.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <ZBarReaderDelegate, UIImagePickerControllerDelegate>
+
+@property (nonatomic, strong) IBOutlet UILabel* upcLabel;
+
+- (IBAction)scanButtonTapped:(id)sender;
 
 @end
