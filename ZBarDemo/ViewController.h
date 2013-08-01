@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ZBarSDK.h"
+#import <ZBarSDK.h>
 
 @interface ViewController : UIViewController <ZBarReaderDelegate, UIImagePickerControllerDelegate>
 
